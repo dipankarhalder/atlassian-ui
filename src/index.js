@@ -1,5 +1,6 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 
 import './style.scss';
 import App from './app';
@@ -9,6 +10,8 @@ const rootApplication = ReactDOM.createRoot(rootElement);
 
 rootApplication.render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 );
