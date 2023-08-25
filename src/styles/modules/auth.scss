@@ -1,0 +1,21 @@
+.app-auth-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: {
+    size: cover;
+    attachment: fixed;
+    image: url('../../assets/images/backg.svg');
+    repeat: no-repeat;
+    position: center center;
+  }
+
+  .app-auth-content {
+    width: 400px;
+    padding: 32px 40px;
+    background: $white;
+    @include radius(3px);
+    box-shadow: $shadow;
+  }
+}
