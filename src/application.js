@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Login, Register } from './pages';
 import { LOGIN, REGISTER } from './utils/routes';
 
-export default function App() {
+export default function Application() {
   return (
     <Routes>
       <Route path={LOGIN}>

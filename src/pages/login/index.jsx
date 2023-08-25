@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
+import { AuthLayout } from '../../layout';
 import { Input, Button } from '../../components';
 import { content } from '../../utils/content';
 
@@ -14,7 +15,7 @@ export function Login() {
   };
 
   return (
-    <div>
+    <AuthLayout>
       <h1>Login</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Input
@@ -25,6 +26,6 @@ export function Login() {
         <Button label={content.login.btn_content} typebtn="submit" />
       </form>
       <Link to={REGISTER}>{content.login.register_link}</Link>
-    </div>
+    </AuthLayout>
   );
 }
