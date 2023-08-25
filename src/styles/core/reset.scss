@@ -23,7 +23,7 @@
   @include box();
 }
 body {
-  @include font($tregular, 100px);
+  @include font($tregular, 14px);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
