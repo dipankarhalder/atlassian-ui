@@ -23,7 +23,7 @@
   @include box();
 }
 body {
-  @include font($tregular, 14px);
+  @include font($dregular, 14px);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -74,7 +74,7 @@ hr {
   box-sizing: content-box;
 }
 pre {
-  @include font($tregular, 1em);
+  @include font($dregular, 1em);
 }
 a {
   background: $trans;
@@ -97,7 +97,7 @@ strong {
 code,
 kbd,
 samp {
-  @include font($tregular, 14px);
+  @include font($dregular, 14px);
 }
 small {
   font-size: 80%;
@@ -123,7 +123,7 @@ input,
 optgroup,
 select,
 textarea {
-  @include font($tregular, 100%);
+  @include font($dregular, 14px);
   line-height: 1.15;
   margin: 0;
 
@@ -145,7 +145,7 @@ select {
   text-transform: none;
 }
 input:-internal-autofill-selected {
-  @include font($tregular, 14px);
+  @include font($dregular, 14px);
   background: $white;
 }
 button,
