@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { Login, Register } from './pages';
-import { LOGIN, REGISTER } from './utils/routes';
+import { Login, Register, Forgot } from './pages';
+import { LOGIN, REGISTER, FORGOT } from './utils/routes';
 
 export default function Application() {
   return (
@@ -9,6 +9,7 @@ export default function Application() {
       <Route path={LOGIN}>
         <Route index element={<Login />} />
         <Route path={REGISTER} element={<Register />} />
+        <Route path={FORGOT} element={<Forgot />} />
       </Route>
     </Routes>
   );
