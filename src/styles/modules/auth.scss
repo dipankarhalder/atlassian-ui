@@ -45,6 +45,17 @@
   form {
     display: flex;
     flex-direction: column;
+
+    p {
+      color: darken($gray, 16%);
+      margin-bottom: 10px;
+      @include font($dsemibold, 12px);
+
+      & > span {
+        color: $tblue;
+        cursor: pointer;
+      }
+    }
   }
 }
 
