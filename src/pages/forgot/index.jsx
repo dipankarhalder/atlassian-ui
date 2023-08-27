@@ -3,10 +3,9 @@ import { useForm } from 'react-hook-form';
 
 import { AuthLayout } from '../../layout';
 import { Input, Button } from '../../shared';
+import { AuthLogo, AuthHead, AuthFooter } from '../../components';
 import { content } from '../../utils/content';
 import { LOGIN } from '../../utils/routes';
-
-import altlogo from '../../assets/images/logo.svg';
 
 export function Forgot() {
   const { register, handleSubmit } = useForm();
@@ -17,24 +16,22 @@ export function Forgot() {
 
   return (
     <AuthLayout>
-      <div className="app-logo">
-        <img src={altlogo} alt={content.login.alts} />
-      </div>
-      <div className="app-heading">
-        <h1>{content.login.forgot_link}</h1>
-      </div>
+      <AuthLogo content={content.common} />
+      <AuthHead content={content.forgot} />
       <div className="app-form-cover">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <Input label={content.login.reg_email} register={register} required />
-          <Button label={content.login.recover} typebtn="submit" />
+          <Input
+            label={content.forgot.reg_email}
+            register={register}
+            required
+          />
+          <Button label={content.forgot.recover} typebtn="submit" />
         </form>
       </div>
-      <div className="app-item-links">
-        <Link to={LOGIN}>{content.login.back_login}</Link>
+      <div className="app-auth-links">
+        <Link to={LOGIN}>{content.forgot.back_login}</Link>
       </div>
-      <div className="app-bottom-text">
-        <p>One account for Jira, Confluence, Trello and more.</p>
-      </div>
+      <AuthFooter content={content.common} />
     </AuthLayout>
   );
 }
