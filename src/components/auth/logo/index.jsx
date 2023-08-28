@@ -1,4 +1,4 @@
-import altlogo from '../../assets/images/logo.svg';
+import altlogo from '../../../assets/images/logo.svg';
 
 export const AuthLogo = ({ content }) => {
   return (
