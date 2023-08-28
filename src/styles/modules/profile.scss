@@ -91,14 +91,18 @@
       @include font($dsemibold, 26px);
     }
   }
+  .app-pro-descpt {
+    margin-top: 20px;
+    p {
+      @include font($dregular, 14px);
+    }
+  }
   .app-list-product-card {
     margin-top: 30px;
     .app-card-item {
       display: flex;
       flex-direction: column;
-      padding-bottom: 40px;
-      margin-bottom: 26px;
-      border-bottom: 1px solid lighten($border, 6%);
+      margin-bottom: 32px;
       &:last-child {
         border-bottom: 0px solid $trans;
       }
@@ -126,7 +130,8 @@
           & > span {
             @include icon(16px);
             margin-right: 6px;
-            & > img {
+            & > img,
+            & > svg {
               @include icon(16px);
             }
           }
