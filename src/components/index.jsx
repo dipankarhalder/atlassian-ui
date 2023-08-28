@@ -1,5 +1,9 @@
-export * from './authLogo';
-export * from './authHead';
-export * from './authContinue';
-export * from './authSocialItem';
-export * from './authFooter';
+// authentication
+export * from './auth/logo';
+export * from './auth/head';
+export * from './auth/continue';
+export * from './auth/socialItem';
+export * from './auth/footer';
+
+// manage profile
+export * from './profile/header';

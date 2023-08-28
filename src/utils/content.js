@@ -37,3 +37,10 @@ export const content = {
     slack: 'Slack',
   },
 };
+
+export const mprofile = {
+  common: {
+    atlas: 'Atlassian',
+    page_name: 'Manage Profile',
+  },
+};
