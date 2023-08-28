@@ -1,7 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { Login, Register, Forgot, Products } from './pages';
-import { LOGIN, REGISTER, FORGOT, PRODUCTS } from './utils/routes';
+import { ProfileLayout } from './layout';
+import { Login, Register, Forgot, ConnectedApp, Products } from './pages';
+import {
+  LOGIN,
+  REGISTER,
+  FORGOT,
+  CONNECTEDAPP,
+  PRODUCTS,
+} from './utils/routes';
 
 export default function Application() {
   return (
@@ -14,9 +21,13 @@ export default function Application() {
       </Route>
 
       {/* Manage profile */}
-      <Route path={PRODUCTS}>
-        <Route index element={<Products />} />
+      <Route element={<ProfileLayout />}>
+        <Route path={CONNECTEDAPP} element={<ConnectedApp />} />
+        <Route path={PRODUCTS} element={<Products />} />
       </Route>
+
+      {/* Not found */}
+      <Route path="*" element={<div>Not found</div>} />
     </Routes>
   );
 }
