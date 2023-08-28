@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
-import { AuthLayout } from '../../layout';
-import { Input, Button } from '../../shared';
-import { AuthLogo, AuthHead, AuthFooter } from '../../components';
-import { content } from '../../utils/content';
-import { LOGIN } from '../../utils/routes';
+import { AuthLayout } from '../../../layout';
+import { Input, Button } from '../../../shared';
+import { AuthLogo, AuthHead, AuthFooter } from '../../../components';
+import { content } from '../../../utils/content';
+import { LOGIN } from '../../../utils/routes';
 
 export function Forgot() {
   const { register, handleSubmit } = useForm();

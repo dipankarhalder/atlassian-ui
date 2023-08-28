@@ -1,7 +1,7 @@
-import google from '../../assets/images/google.svg';
-import microsoft from '../../assets/images/microsoft.svg';
-import apple from '../../assets/images/apple.svg';
-import slack from '../../assets/images/slack.svg';
+import google from '../../../assets/images/google.svg';
+import microsoft from '../../../assets/images/microsoft.svg';
+import apple from '../../../assets/images/apple.svg';
+import slack from '../../../assets/images/slack.svg';
 
 export const AuthSocialItem = ({ content }) => {
   return (

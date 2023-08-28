@@ -1,3 +1,7 @@
-export * from './login';
-export * from './register';
-export * from './forgot';
+// authentication
+export * from './auth/login';
+export * from './auth/register';
+export * from './auth/forgot';
+
+// manage profile
+export * from './profile/products';
