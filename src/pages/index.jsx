@@ -4,5 +4,6 @@ export * from './auth/register';
 export * from './auth/forgot';
 
 // manage profile
+export * from './profile/email';
 export * from './profile/connectedApp';
 export * from './profile/products';
