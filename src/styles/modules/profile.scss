@@ -148,3 +148,50 @@
     }
   }
 }
+.app-profile-current-email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  h3 {
+    @include font($dsemibold, 17px);
+    margin-bottom: 0px;
+  }
+  p {
+    @include font($dregular, 14px);
+    & > span {
+      @include font($dsemibold, 14px);
+    }
+    em {
+      color: $tblue;
+      font-style: normal;
+      @include font($dsemibold, 13px);
+    }
+  }
+}
+.app-profile-email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  .app-profile-other-email {
+    display: flex;
+    flex-wrap: wrap;
+    .app-mail-item {
+      width: auto;
+      display: flex;
+      justify-content: center;
+      padding: 10px 16px;
+      @include radius(4px);
+      border: 1px solid $border;
+      & > span {
+        @include icon(20px);
+        & > img {
+          @include icon(20px);
+        }
+      }
+      p {
+        @include font($dsemibold, 13px);
+        margin-left: 10px;
+      }
+    }
+  }
+}

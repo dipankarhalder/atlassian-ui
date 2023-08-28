@@ -1,11 +1,19 @@
 import { Routes, Route } from 'react-router-dom';
 
 import { ProfileLayout } from './layout';
-import { Login, Register, Forgot, ConnectedApp, Products } from './pages';
+import {
+  Login,
+  Register,
+  Forgot,
+  Email,
+  ConnectedApp,
+  Products,
+} from './pages';
 import {
   LOGIN,
   REGISTER,
   FORGOT,
+  EMAIL,
   CONNECTEDAPP,
   PRODUCTS,
 } from './utils/routes';
@@ -22,6 +30,7 @@ export default function Application() {
 
       {/* Manage profile */}
       <Route element={<ProfileLayout />}>
+        <Route path={EMAIL} element={<Email />} />
         <Route path={CONNECTEDAPP} element={<ConnectedApp />} />
         <Route path={PRODUCTS} element={<Products />} />
       </Route>

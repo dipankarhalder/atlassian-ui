@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 
 import altlogo from '../../../assets/images/logo.svg';
 import { mprofile } from '../../../utils/content';
-import { CONNECTEDAPP, PRODUCTS } from '../../../utils/routes';
+import { EMAIL, CONNECTEDAPP, PRODUCTS } from '../../../utils/routes';
 
 export const ProfileHeader = () => {
   const profileNav = [
     { title: 'Profile and visibility', path: '/' },
-    { title: 'Email', path: '/' },
+    { title: 'Email', path: EMAIL },
     { title: 'Security', path: '/' },
     { title: 'Preferences', path: '/' },
     { title: 'Connected Apps', path: CONNECTEDAPP },
