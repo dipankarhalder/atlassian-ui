@@ -43,4 +43,12 @@ export const mprofile = {
     atlas: 'Atlassian',
     page_name: 'Manage Profile',
   },
+  connectApp: {
+    heading: 'Connected Apps',
+    desc: 'Control which apps have access to your user data, see which apps your site administrator controls, and find further information about apps storing data outside of Atlassian. Apps may appear on this page more than once depending on their implementation or how much access you have granted to the app. Discover new or alternative apps in the Atlassian Marketplace.',
+    noApp: 'No apps have been added.',
+  },
+  products: {
+    heading: 'Products',
+  },
 };
