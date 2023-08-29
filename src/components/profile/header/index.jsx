@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import altlogo from '../../../assets/images/logo.svg';
 
-import proHeader from './proHeader.module.css';
+import mainProfile from '../main.module.css';
 import { mprofile } from '../../../utils/content';
 import { EMAIL, CONNECTEDAPP, PRODUCTS } from '../../../utils/routes';
 
@@ -18,22 +18,24 @@ export const ProfileHeader = () => {
   ];
 
   return (
-    <div className={proHeader.appProfileHeader}>
-      <div className={proHeader.appNavCover}>
-        <div className={proHeader.appNavHead}>
+    <div className={mainProfile.appProfileHeader}>
+      <div className={mainProfile.appNavCover}>
+        <div className={mainProfile.appNavHead}>
           <HiViewGridAdd />
         </div>
-        <div className={proHeader.appHeaderLogo}>
+        <div className={mainProfile.appHeaderLogo}>
           <img src={altlogo} alt={mprofile.common.atlas} />
           <h1>{mprofile.common.page_name}</h1>
         </div>
-        <div className={proHeader.appNavLinks}>
+        <div className={mainProfile.appNavLinks}>
           <ul>
             {profileNav.map((item) => (
               <li key={item.title}>
                 <NavLink
                   to={item.path}
-                  className={({ isActive }) => (isActive ? 'navActive' : '')}
+                  className={({ isActive }) =>
+                    isActive ? `${mainProfile.navActive}` : ''
+                  }
                 >
                   {item.title}
                 </NavLink>
@@ -42,7 +44,7 @@ export const ProfileHeader = () => {
           </ul>
         </div>
       </div>
-      <div className={proHeader.appAvatar}>
+      <div className={mainProfile.appAvatar}>
         <span>DH</span>
       </div>
     </div>

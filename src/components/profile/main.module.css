@@ -1,15 +1,18 @@
-.app-profile-header {
+.appProfileHeader {
   display: flex;
   box-shadow: var(--headerShadow);
   justify-content: space-between;
-  .app-nav-cover {
+
+  .appNavCover {
     display: flex;
     padding: 17px 20px;
-    .app-nav-head {
+
+    .appNavHead {
       float: left;
       height: 20px;
       width: 20px;
-      margin-right: 10px;
+      margin-right: 40px;
+
       & > svg {
         color: var(--tcolor);
         float: left;
@@ -17,13 +20,16 @@
         width: 20px;
       }
     }
-    .app-header-logo {
+
+    .appHeaderLogo {
       display: flex;
       margin-right: 60px;
-      img {
+
+      & > img {
         width: 122px;
       }
-      h1 {
+
+      & > h1 {
         height: 20px;
         line-height: 18px;
         margin-left: 20px;
@@ -31,19 +37,28 @@
         font-family: var(--dsemibold);
       }
     }
-    .app-nav-links {
+
+    .appNavLinks {
       display: flex;
-      ul {
+
+      & > ul {
         display: flex;
-        li {
+
+        & > li {
           margin-right: 20px;
-          a {
+
+          & > a {
             color: var(--btext);
             position: relative;
             font-size: 14px;
             font-family: var(--dsemibold);
-            &.nav-active {
+
+            &:hover,
+            &.navActive {
               color: var(--tblue);
+            }
+
+            &.navActive {
               &:after {
                 content: '';
                 position: absolute;
@@ -54,16 +69,15 @@
                 background: var(--tblue);
               }
             }
-            &:hover {
-              color: var(--tblue);
-            }
           }
         }
       }
     }
   }
-  .app-avatar {
+
+  .appAvatar {
     padding: 10px 20px;
+
     & > span {
       margin-top: 5px;
       float: left;

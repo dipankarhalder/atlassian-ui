@@ -1,36 +1,29 @@
+import mainSocial from '../main.module.css';
+
 import google from '../../../assets/images/google.svg';
 import microsoft from '../../../assets/images/microsoft.svg';
 import apple from '../../../assets/images/apple.svg';
 import slack from '../../../assets/images/slack.svg';
 
 export const AuthSocialItem = ({ content }) => {
+  const socialData = [
+    { title: content.google, img: google },
+    { title: content.microsoft, img: microsoft },
+    { title: content.apple, img: apple },
+    { title: content.slack, img: slack },
+  ];
+
   return (
-    <div className="app-social-items">
+    <div className={mainSocial.appSocialItems}>
       <ul>
-        <li>
-          <span>
-            <img src={google} alt={content.google} />
-          </span>
-          <p>{content.google}</p>
-        </li>
-        <li>
-          <span>
-            <img src={microsoft} alt={content.microsoft} />
-          </span>
-          <p>{content.microsoft}</p>
-        </li>
-        <li>
-          <span>
-            <img src={apple} alt={content.apple} />
-          </span>
-          <p>{content.apple}</p>
-        </li>
-        <li>
-          <span>
-            <img src={slack} alt={content.slack} />
-          </span>
-          <p>{content.slack}</p>
-        </li>
+        {socialData.map((item, idx) => (
+          <li key={idx}>
+            <span>
+              <img src={item.img} alt={item.title} />
+            </span>
+            <p>{item.title}</p>
+          </li>
+        ))}
       </ul>
     </div>
   );

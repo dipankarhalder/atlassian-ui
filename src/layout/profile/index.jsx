@@ -1,14 +1,14 @@
 import { Outlet } from 'react-router-dom';
 import { ProfileHeader } from '../../components';
 
-import proLayout from './proLayout.module.css';
+import mainLayout from '../main.module.css';
 
 export const ProfileLayout = () => {
   return (
-    <div className={proLayout.appProfileWrapper}>
+    <div className={mainLayout.appProfileWrapper}>
       <ProfileHeader />
-      <div className={proLayout.appProfileContent}>
-        <div className={proLayout.appProfileContentCover}>
+      <div className={mainLayout.appProfileContent}>
+        <div className={mainLayout.appProfileContentCover}>
           <Outlet />
         </div>
       </div>
