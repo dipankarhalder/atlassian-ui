@@ -1,3 +1,5 @@
+import { HiOutlineDotsVertical } from 'react-icons/hi';
+
 import google from '../../../assets/images/google.svg';
 
 export const Email = () => {
@@ -20,6 +22,7 @@ export const Email = () => {
               <img src={google} alt="Google" />
             </span>
             <p>Log in with Google enabled</p>
+            <HiOutlineDotsVertical />
           </div>
         </div>
       </div>
