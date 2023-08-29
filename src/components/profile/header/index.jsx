@@ -2,6 +2,8 @@ import { HiViewGridAdd } from 'react-icons/hi';
 import { NavLink } from 'react-router-dom';
 
 import altlogo from '../../../assets/images/logo.svg';
+
+import proHeader from './proHeader.module.css';
 import { mprofile } from '../../../utils/content';
 import { EMAIL, CONNECTEDAPP, PRODUCTS } from '../../../utils/routes';
 
@@ -16,22 +18,22 @@ export const ProfileHeader = () => {
   ];
 
   return (
-    <div className="app-profile-header">
-      <div className="app-nav-cover">
-        <div className="app-nav-head">
+    <div className={proHeader.appProfileHeader}>
+      <div className={proHeader.appNavCover}>
+        <div className={proHeader.appNavHead}>
           <HiViewGridAdd />
         </div>
-        <div className="app-header-logo">
+        <div className={proHeader.appHeaderLogo}>
           <img src={altlogo} alt={mprofile.common.atlas} />
           <h1>{mprofile.common.page_name}</h1>
         </div>
-        <div className="app-nav-links">
+        <div className={proHeader.appNavLinks}>
           <ul>
             {profileNav.map((item) => (
               <li key={item.title}>
                 <NavLink
                   to={item.path}
-                  className={({ isActive }) => (isActive ? 'nav-active' : '')}
+                  className={({ isActive }) => (isActive ? 'navActive' : '')}
                 >
                   {item.title}
                 </NavLink>
@@ -40,7 +42,7 @@ export const ProfileHeader = () => {
           </ul>
         </div>
       </div>
-      <div className="app-avatar">
+      <div className={proHeader.appAvatar}>
         <span>DH</span>
       </div>
     </div>
