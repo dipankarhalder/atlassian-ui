@@ -1,0 +1,15 @@
+.appInputField {
+  display: flex;
+  width: 100%;
+  margin-bottom: 12px;
+
+  & > input {
+    width: 100%;
+    padding: 8px 14px;
+    height: 2.8em;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: var(--dregular);
+    border: 1px solid var(--border);
+  }
+}
