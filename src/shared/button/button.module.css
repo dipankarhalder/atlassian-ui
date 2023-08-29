@@ -11,8 +11,14 @@
     cursor: pointer;
     font-size: 14px;
     border-radius: 4px;
+    transition: 0.5s;
     background: var(--tblue);
     font-family: var(--dsemibold);
     border: 0px solid var(--trans);
+
+    &:hover {
+      transition: 0.5s;
+      background: var(--tbluehover);
+    }
   }
 }

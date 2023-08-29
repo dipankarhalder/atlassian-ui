@@ -1,0 +1,268 @@
+.appProfileSetup {
+  display: flex;
+  flex-direction: column;
+
+  .appProHeading {
+    & > h1 {
+      font-size: 26px;
+      font-family: var(--dsemibold);
+    }
+  }
+
+  .appProDescpt {
+    margin-top: 20px;
+
+    & > p {
+      font-size: 14px;
+      font-family: var(--dregular);
+    }
+  }
+
+  .appProfileCurrentEmail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    & > h3 {
+      font-size: 17px;
+      font-family: var(--dsemibold);
+      margin-bottom: 0px;
+    }
+
+    & > p {
+      font-size: 14px;
+      font-family: var(--dregular);
+
+      & > span {
+        font-size: 14px;
+        font-family: var(--dsemibold);
+      }
+    }
+  }
+
+  .appProfileHeadEmail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    & > h3 {
+      font-size: 16px;
+      font-family: var(--dsemibold);
+      margin-bottom: 6px;
+    }
+
+    & > p {
+      font-size: 14px;
+      font-family: var(--dregular);
+
+      & > span {
+        color: var(--tblue);
+        font-family: var(--dsemibold);
+      }
+    }
+  }
+
+  .appListProductCard {
+    margin-top: 30px;
+
+    .appCardItem {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 32px;
+
+      &:last-child {
+        border-bottom: 0px solid var(--trans);
+      }
+
+      & > h4 {
+        font-size: 16px;
+        font-family: var(--dsemibold);
+        margin-bottom: 4px;
+      }
+
+      & > p {
+        font-size: 14px;
+        font-family: var(--dregular);
+        margin-bottom: 18px;
+      }
+
+      & > ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        & > li {
+          cursor: pointer;
+          padding: 6px 14px;
+          box-shadow: var(--cardShadow);
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          border-radius: 4px;
+          transition: 0.5s;
+
+          &:hover {
+            transition: 0.5s;
+            background: var(--socialHover);
+          }
+
+          & > span {
+            float: left;
+            width: 16px;
+            height: 16px;
+            margin-right: 6px;
+
+            & > img,
+            & > svg {
+              float: left;
+              width: 16px;
+              height: 16px;
+            }
+          }
+
+          & > p {
+            font-size: 14px;
+            font-family: var(--dsemibold);
+            color: var(--lighttext);
+          }
+        }
+      }
+    }
+  }
+
+  .appProfileEmail {
+    display: flex;
+    flex-direction: column;
+
+    .appProfileOtherEmail {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      .wrapEmail {
+        display: flex;
+        margin-top: 14px;
+
+        .appMailItem {
+          width: auto;
+          display: flex;
+          justify-content: center;
+          padding: 10px 16px;
+          border-radius: 4px;
+          box-shadow: var(--cardShadow);
+
+          & > span {
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+
+            & > img {
+              float: left;
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          & > p {
+            font-size: 13px;
+            font-family: var(--dsemibold);
+          }
+        }
+
+        & > em {
+          height: 42px;
+          line-height: 40px;
+          margin-left: 16px;
+          color: var(--tblue);
+          font-style: normal;
+          font-size: 13px;
+          font-family: var(--dsemibold);
+        }
+      }
+
+      .wrapColumnEmail {
+        display: flex;
+
+        .appMailItem {
+          width: auto;
+          display: flex;
+          justify-content: center;
+          padding: 10px 10px 10px 16px;
+          border-radius: 4px;
+          margin-right: 12px;
+          box-shadow: var(--cardShadow);
+
+          & > span {
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+
+            & > img {
+              float: left;
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          & > p {
+            font-size: 13px;
+            font-family: var(--dsemibold);
+            margin-right: 20px;
+          }
+
+          & > svg {
+            margin-top: 2px;
+            float: left;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+          }
+        }
+
+        & > em {
+          height: 42px;
+          line-height: 40px;
+          margin-left: 16px;
+          color: var(--tblue);
+          font-style: normal;
+          font-size: 13px;
+          font-family: var(--dsemibold);
+        }
+      }
+
+      .wrapAddEmail {
+        display: flex;
+        margin-top: 0px;
+
+        .appAddMailItem {
+          width: auto;
+          display: flex;
+          justify-content: center;
+          padding: 10px 16px;
+          border-radius: 4px;
+          box-shadow: var(--cardShadow);
+
+          & > span {
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+
+            & > svg {
+              float: left;
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          & > p {
+            font-size: 13px;
+            font-family: var(--dsemibold);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+/* auth form */
+.appFormCover form {
+  display: flex;
+  flex-direction: column;
+
+  & > p {
+    color: var(--gray);
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-family: var(--dsemibold);
+
+    & > span {
+      color: var(--gray);
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-family: var(--dsemibold);
+    }
+  }
+}
+
+/* auth links */
+.appAuthLinks {
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  border-bottom: 1px solid var(--lightborder);
+
+  & > p,
+  & > a {
+    height: 24px;
+    line-height: 24px;
+    font-size: 13px;
+    font-family: var(--dsemibold);
+    margin: 0 6px;
+    color: var(--tblue);
+  }
+
+  & > p {
+    height: 16px;
+    line-height: 13px;
+    font-size: 20px;
+    color: var(--gray);
+  }
+}

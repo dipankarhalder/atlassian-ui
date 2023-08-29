@@ -1,6 +1,6 @@
 import { HiOutlineNewspaper } from 'react-icons/hi';
 
-import connApp from './connApp.module.css';
+import mainProfile from '../main.module.css';
 import { mprofile } from '../../../utils/content';
 
 import conf from '../../../assets/images/conf.svg';
@@ -33,16 +33,16 @@ export const ConnectedApp = () => {
   ];
 
   return (
-    <div className={connApp.appProfileSetup}>
-      <div className={connApp.appProHeading}>
+    <div className={mainProfile.appProfileSetup}>
+      <div className={mainProfile.appProHeading}>
         <h1>{mprofile.connectApp.heading}</h1>
       </div>
-      <div className={connApp.appProDescpt}>
+      <div className={mainProfile.appProDescpt}>
         <p>{mprofile.connectApp.desc}</p>
       </div>
-      <div className={connApp.appListProductCard}>
+      <div className={mainProfile.appListProductCard}>
         {listApp.map((item) => (
-          <div className={connApp.appCardItem} key={item.id}>
+          <div className={mainProfile.appCardItem} key={item.id}>
             <h4>{item.title}</h4>
             <p>{item.desc}</p>
             {item.listApp.length ? (

@@ -1,9 +1,9 @@
-import authLayout from './authlayout.module.css';
+import mainLayout from '../main.module.css';
 
 export function AuthLayout({ children }) {
   return (
-    <div className={authLayout.appAuthWrapper}>
-      <div className={authLayout.appAuthContent}>{children}</div>
+    <div className={mainLayout.appAuthWrapper}>
+      <div className={mainLayout.appAuthContent}>{children}</div>
     </div>
   );
 }
