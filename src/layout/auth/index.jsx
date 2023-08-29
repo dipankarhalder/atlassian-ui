@@ -1,7 +1,9 @@
+import authLayout from './authlayout.module.css';
+
 export function AuthLayout({ children }) {
   return (
-    <div className="app-auth-wrapper">
-      <div className="app-auth-content">{children}</div>
+    <div className={authLayout.appAuthWrapper}>
+      <div className={authLayout.appAuthContent}>{children}</div>
     </div>
   );
 }

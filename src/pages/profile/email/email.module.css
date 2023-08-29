@@ -1,0 +1,41 @@
+.appProfileSetup {
+  display: flex;
+  flex-direction: column;
+  .appProHeading {
+    h1 {
+      font-size: 26px;
+      font-family: var(--dsemibold);
+    }
+  }
+  .appProDescpt {
+    margin-top: 20px;
+    p {
+      font-size: 14px;
+      font-family: var(--dregular);
+    }
+  }
+}
+.appProfileCurrentEmail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  h3 {
+    font-size: 17px;
+    font-family: var(--dsemibold);
+    margin-bottom: 0px;
+  }
+  p {
+    font-size: 14px;
+    font-family: var(--dregular);
+    & > span {
+      font-size: 14px;
+      font-family: var(--dsemibold);
+    }
+    em {
+      color: var(--tblue);
+      font-style: normal;
+      font-size: 13px;
+      font-family: var(--dsemibold);
+    }
+  }
+}

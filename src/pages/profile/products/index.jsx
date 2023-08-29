@@ -1,4 +1,5 @@
 import { mprofile } from '../../../utils/content';
+import productStyle from './product.module.css';
 
 import jira from '../../../assets/images/jira.svg';
 import align from '../../../assets/images/align.svg';
@@ -47,13 +48,13 @@ export const Products = () => {
   ];
 
   return (
-    <div className="app-profile-setup">
-      <div className="app-pro-heading">
+    <div className={productStyle.appProfileSetup}>
+      <div className={productStyle.appProHeading}>
         <h1>{mprofile.products.heading}</h1>
       </div>
-      <div className="app-list-product-card">
+      <div className={productStyle.appListProductCard}>
         {listData.map((item) => (
-          <div className="app-card-item" key={item.id}>
+          <div className={productStyle.appCardItem} key={item.id}>
             <h4>{item.title}</h4>
             <p>{item.desc}</p>
             <ul>
