@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
+import mainAuth from '../main.module.css';
 import { AuthLayout } from '../../../layout';
 import { Input, Button } from '../../../shared';
 import {
@@ -26,7 +27,7 @@ export function Login() {
       <AuthHead content={content.login} />
       <AuthSocialItem content={content.social} />
       <AuthContinue content={content.common} />
-      <div className="app-form-cover">
+      <div className={mainAuth.appFormCover}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <Input
             label={content.login.place_email}
@@ -41,7 +42,7 @@ export function Login() {
           <Button label={content.login.btn_content} typebtn="submit" />
         </form>
       </div>
-      <div className="app-auth-links">
+      <div className={mainAuth.appAuthLinks}>
         <Link to={FORGOT}>{content.login.forgot_link}</Link>
         <p>.</p>
         <Link to={REGISTER}>{content.login.register_link}</Link>

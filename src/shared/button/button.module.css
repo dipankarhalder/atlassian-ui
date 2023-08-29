@@ -1,0 +1,24 @@
+.appButtonField {
+  display: flex;
+  width: 100%;
+  margin-top: 4px;
+
+  & > button {
+    width: 100%;
+    padding: 8px 14px;
+    height: 2.7em;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: 0.5s;
+    background: var(--tblue);
+    font-family: var(--dsemibold);
+    border: 0px solid var(--trans);
+
+    &:hover {
+      transition: 0.5s;
+      background: var(--tbluehover);
+    }
+  }
+}

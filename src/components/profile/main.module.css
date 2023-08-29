@@ -1,0 +1,95 @@
+.appProfileHeader {
+  display: flex;
+  box-shadow: var(--headerShadow);
+  justify-content: space-between;
+
+  .appNavCover {
+    display: flex;
+    padding: 17px 20px;
+
+    .appNavHead {
+      float: left;
+      height: 20px;
+      width: 20px;
+      margin-right: 40px;
+
+      & > svg {
+        color: var(--tcolor);
+        float: left;
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    .appHeaderLogo {
+      display: flex;
+      margin-right: 60px;
+
+      & > img {
+        width: 122px;
+      }
+
+      & > h1 {
+        height: 20px;
+        line-height: 18px;
+        margin-left: 20px;
+        font-size: 18px;
+        font-family: var(--dsemibold);
+      }
+    }
+
+    .appNavLinks {
+      display: flex;
+
+      & > ul {
+        display: flex;
+
+        & > li {
+          margin-right: 20px;
+
+          & > a {
+            color: var(--btext);
+            position: relative;
+            font-size: 14px;
+            font-family: var(--dsemibold);
+
+            &:hover,
+            &.navActive {
+              color: var(--tblue);
+            }
+
+            &.navActive {
+              &:after {
+                content: '';
+                position: absolute;
+                top: calc(100% + 16px);
+                left: 0px;
+                width: 100%;
+                height: 3px;
+                background: var(--tblue);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .appAvatar {
+    padding: 10px 20px;
+
+    & > span {
+      margin-top: 5px;
+      float: left;
+      height: 25px;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gray);
+      border-radius: 50%;
+      font-size: 12px;
+      font-family: var(--dsemibold);
+    }
+  }
+}

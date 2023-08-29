@@ -1,5 +1,6 @@
 import { HiOutlineNewspaper } from 'react-icons/hi';
 
+import mainProfile from '../main.module.css';
 import { mprofile } from '../../../utils/content';
 
 import conf from '../../../assets/images/conf.svg';
@@ -32,16 +33,16 @@ export const ConnectedApp = () => {
   ];
 
   return (
-    <div className="app-profile-setup">
-      <div className="app-pro-heading">
+    <div className={mainProfile.appProfileSetup}>
+      <div className={mainProfile.appProHeading}>
         <h1>{mprofile.connectApp.heading}</h1>
       </div>
-      <div className="app-pro-descpt">
+      <div className={mainProfile.appProDescpt}>
         <p>{mprofile.connectApp.desc}</p>
       </div>
-      <div className="app-list-product-card">
+      <div className={mainProfile.appListProductCard}>
         {listApp.map((item) => (
-          <div className="app-card-item" key={item.id}>
+          <div className={mainProfile.appCardItem} key={item.id}>
             <h4>{item.title}</h4>
             <p>{item.desc}</p>
             {item.listApp.length ? (
