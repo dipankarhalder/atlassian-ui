@@ -1,0 +1,51 @@
+/* font style */
+@font-face {
+  font-family: 'DisplayRegular';
+  src: url('../../assets/fonts/display-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DisplaySemibold';
+  src: url('../../assets/fonts/display-semibold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DisplayBold';
+  src: url('../../assets/fonts/display-bold.woff2') format('woff2');
+}
+
+:root {
+  /* font variable */
+  --dregular: 'DisplayRegular';
+  --dsemibold: 'DisplaySemibold';
+  --dbold: 'DisplayBold';
+
+  /* scroll color */
+  --trans: transparent;
+  --scrollbar: #eeeeee;
+  --scrollthmb: #686868;
+
+  /* primary color */
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #bbbbbb;
+
+  /* theme color */
+  --text: #5e6c84;
+  --btext: #1e1e1e;
+  --tcolor: #172b4d;
+  --tblue: #0052cc;
+  --authbg: #e8f2ff;
+  --border: #dfe1e6;
+  --shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  --headerShadow: rgba(9, 30, 66, 0.13) 0px 2px 2px;
+  --cardShadow: 0px 1px 1px #091e4240, 0px 0px 1px #091e424f;
+}
+
+/* @import './styles/core/fonts.scss';
+@import './styles/core/mixin.scss';
+@import './styles/core/variable.scss';
+@import './styles/core/reset.scss';
+
+@import './styles/comp/forms.scss';
+
+@import './styles/modules/auth.scss';
+@import './styles/modules/profile.scss'; */
