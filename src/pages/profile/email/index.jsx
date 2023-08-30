@@ -1,4 +1,8 @@
-import { HiOutlineDotsVertical, HiOutlineMail } from 'react-icons/hi';
+import { HiOutlineDotsVertical, HiOutlineX } from 'react-icons/hi';
+import { useForm } from 'react-hook-form';
+
+import { mprofile } from '../../../utils/content';
+import { Input, Button } from '../../../shared';
 
 import mainProfile from '../main.module.css';
 import google from '../../../assets/images/google.svg';
@@ -6,16 +10,22 @@ import microsoft from '../../../assets/images/microsoft.svg';
 import apple from '../../../assets/images/apple.svg';
 
 export const Email = () => {
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(JSON.stringify(data));
+  };
+
   return (
     <div className={mainProfile.appProfileSetup}>
       <div className={mainProfile.appProHeading}>
-        <h1>Email</h1>
+        <h1>{mprofile.email.heading}</h1>
       </div>
       <div className={mainProfile.appProfileCurrentEmail}>
-        <h3>Current Email</h3>
+        <h3>{mprofile.email.cemail}</h3>
         <p>
-          Your current email address is &nbsp;{' '}
-          <span>webmail.dip@gmail.com</span>
+          {mprofile.email.emaildesc} &nbsp;{' '}
+          <span>{mprofile.email.emailtitle}</span>
         </p>
       </div>
       <div className={mainProfile.appProfileEmail}>
@@ -25,14 +35,14 @@ export const Email = () => {
               <span>
                 <img src={google} alt="Google" />
               </span>
-              <p>Connected with Google</p>
+              <p>{mprofile.email.conntext}</p>
             </div>
-            <em>(Primary Email)</em>
+            <em>{mprofile.email.primary}</em>
           </div>
         </div>
       </div>
       <div className={mainProfile.appProfileHeadEmail}>
-        <h3>Other Connected Accounts</h3>
+        <h3>{mprofile.email.heading_one}</h3>
       </div>
       <div className={mainProfile.appProfileEmail}>
         <div className={mainProfile.appProfileOtherEmail}>
@@ -41,39 +51,53 @@ export const Email = () => {
               <span>
                 <img src={apple} alt="Apple" />
               </span>
-              <p>Connected with Apple</p>
+              <p>{mprofile.email.connapple}</p>
               <HiOutlineDotsVertical />
             </div>
             <div className={mainProfile.appMailItem}>
               <span>
                 <img src={microsoft} alt="Microsoft" />
               </span>
-              <p>Connected with Microsoft</p>
+              <p>{mprofile.email.connms}</p>
               <HiOutlineDotsVertical />
             </div>
           </div>
         </div>
       </div>
       <div className={mainProfile.appProfileHeadEmail}>
-        <h3>Connect with Email</h3>
+        <h3>{mprofile.email.heading_two}</h3>
       </div>
-      <div className={mainProfile.appProfileEmail}>
-        <div className={mainProfile.appProfileOtherEmail}>
-          <div className={mainProfile.wrapAddEmail}>
-            <div className={mainProfile.appAddMailItem}>
-              <span>
-                <HiOutlineMail />
-              </span>
-              <p>Add New Email</p>
+      <div className={mainProfile.appEmailLists}>
+        <ul>
+          <li>
+            dipankar.halder@yopmail.com <HiOutlineX />
+          </li>
+          <li>
+            dipankar@mindtree.com <HiOutlineX />
+          </li>
+        </ul>
+      </div>
+      <div
+        className={`${mainProfile.appProfileCurrentEmail} ${mainProfile.appMarginTop}`}
+      >
+        <div
+          className={`${mainProfile.appProfileSecForm} ${mainProfile.appPaddingWrap} ${mainProfile.appMarginTop}`}
+        >
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <Input label={'Email Address'} register={register} required />
+            <div
+              className={`${mainProfile.buttonProfile} ${mainProfile.buttonExt}`}
+            >
+              <Button label={'Save Changes'} typebtn="submit" />
             </div>
-          </div>
+          </form>
         </div>
       </div>
       <div className={mainProfile.appProfileHeadEmail}>
-        <h3>Email Notifications</h3>
+        <h3>{mprofile.email.heading_notification}</h3>
         <p>
-          To manage what emails you get, visit the &nbsp;
-          <span>email preferences center.</span>
+          {mprofile.email.head_pro_text} &nbsp;
+          <span>{mprofile.email.head_other}</span>
         </p>
       </div>
     </div>
