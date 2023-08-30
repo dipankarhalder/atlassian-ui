@@ -6,6 +6,8 @@ import {
   Register,
   Forgot,
   Email,
+  Security,
+  Preferences,
   ConnectedApp,
   Products,
 } from './pages';
@@ -14,6 +16,8 @@ import {
   REGISTER,
   FORGOT,
   EMAIL,
+  SECURITY,
+  PREFERENCES,
   CONNECTEDAPP,
   PRODUCTS,
 } from './utils/routes';
@@ -31,6 +35,8 @@ export default function Application() {
       {/* Manage profile */}
       <Route element={<ProfileLayout />}>
         <Route path={EMAIL} element={<Email />} />
+        <Route path={SECURITY} element={<Security />} />
+        <Route path={PREFERENCES} element={<Preferences />} />
         <Route path={CONNECTEDAPP} element={<ConnectedApp />} />
         <Route path={PRODUCTS} element={<Products />} />
       </Route>

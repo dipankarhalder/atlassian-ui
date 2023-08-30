@@ -43,6 +43,32 @@ export const mprofile = {
     atlas: 'Atlassian',
     page_name: 'Manage Profile',
   },
+  email: {
+    heading: 'Email',
+    cemail: 'Current Email',
+    emaildesc: 'Your current email address is',
+    emailtitle: 'webmail.dip@gmail.com',
+    conntext: 'Connected with Google',
+    connapple: 'Connected with Apple',
+    connms: 'Connected with Microsoft',
+    primary: '(Primary Email)',
+    heading_one: 'Other Connected Accounts',
+    heading_two: 'Connect with Email',
+    heading_notification: 'Email Notifications',
+    head_pro_text: 'To manage what emails you get, visit the',
+    head_other: 'email preferences center.',
+  },
+  pref: {
+    heading: 'Account preferences',
+    desc: 'Control settings related to your account.',
+    cardHead: 'Language & Region',
+    cardDesc:
+      'Changes to your language and timezone will be reflected across Jira, Confluence, Trello, Bitbucket and directory. Update your language and timezone for other products from your',
+    sett: 'product settings.',
+    delHead: 'Delete your account',
+    delDesc:
+      'When you delete your account, you lose access to Atlassian account services, and we permanently delete your personal data. You can cancel the deletion within 14 days.',
+  },
   connectApp: {
     heading: 'Connected Apps',
     desc: 'Control which apps have access to your user data, see which apps your site administrator controls, and find further information about apps storing data outside of Atlassian. Apps may appear on this page more than once depending on their implementation or how much access you have granted to the app. Discover new or alternative apps in the Atlassian Marketplace.',
