@@ -1,4 +1,5 @@
 import { mprofile } from '../../../utils/content';
+import { SelectBox } from '../../../shared';
 
 import mainProfile from '../main.module.css';
 
@@ -12,12 +13,16 @@ export const Preferences = () => {
         <p>{mprofile.pref.desc}</p>
       </div>
       <div className={mainProfile.appListProductCard}>
-        <div className={mainProfile.appCardItem}>
+        <div className={`${mainProfile.appCardItem} ${mainProfile.margBotms}`}>
           <h4>{mprofile.pref.cardHead}</h4>
           <p>
             {mprofile.pref.cardDesc} <em>{mprofile.pref.sett}</em>
           </p>
         </div>
+      </div>
+      <div className={mainProfile.appPrefSelect}>
+        <SelectBox />
+        <SelectBox />
       </div>
       <div className={mainProfile.appListProductCard}>
         <div className={mainProfile.appCardItem}>
