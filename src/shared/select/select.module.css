@@ -1,0 +1,53 @@
+.appSelectField {
+  display: flex;
+  width: 100%;
+  margin-top: 4px;
+  position: relative;
+
+  .appSelectText {
+    width: 100%;
+    padding: 14px 16px;
+    height: 2.8em;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: var(--dregular);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > span {
+      font-size: 14px;
+      font-family: var(--dregular);
+    }
+
+    & > svg {
+      float: left;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .appSelectList {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 4px;
+    background: var(--white);
+    box-shadow: var(--cardShadow);
+
+    & > ul {
+      & > li {
+        padding: 6px 20px;
+        border-left: 2px solid var(--white);
+
+        &:hover {
+          background: var(--socialHover);
+          border-left: 2px solid var(--tblue);
+        }
+      }
+    }
+  }
+}
