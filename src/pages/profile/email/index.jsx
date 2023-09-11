@@ -70,10 +70,10 @@ export const Email = () => {
       <div className={mainProfile.appEmailLists}>
         <ul>
           <li>
-            dipankar.halder@yopmail.com <HiOutlineX />
+            {mprofile.email.c_email_lo} <HiOutlineX />
           </li>
           <li>
-            dipankar@mindtree.com <HiOutlineX />
+            {mprofile.email.c_email_lt} <HiOutlineX />
           </li>
         </ul>
       </div>
@@ -84,11 +84,15 @@ export const Email = () => {
           className={`${mainProfile.appProfileSecForm} ${mainProfile.appPaddingWrap} ${mainProfile.appMarginTop}`}
         >
           <form onSubmit={handleSubmit(onSubmit)}>
-            <Input label={'Email Address'} register={register} required />
+            <Input
+              label={mprofile.email.f_email}
+              register={register}
+              required
+            />
             <div
               className={`${mainProfile.buttonProfile} ${mainProfile.buttonExt}`}
             >
-              <Button label={'Save Changes'} typebtn="submit" />
+              <Button label={mprofile.email.f_btn} typebtn="submit" />
             </div>
           </form>
         </div>

@@ -43,6 +43,10 @@ export const mprofile = {
     atlas: 'Atlassian',
     page_name: 'Manage Profile',
   },
+  prof: {
+    heading: 'Profile and visibility',
+    desc: 'Manage your personal information, and control which information other people see and apps may access.',
+  },
   email: {
     heading: 'Email',
     cemail: 'Current Email',
@@ -54,9 +58,20 @@ export const mprofile = {
     primary: '(Primary Email)',
     heading_one: 'Other Connected Accounts',
     heading_two: 'Connect with Email',
+    c_email_lo: 'dipankar.halder@yopmail.com',
+    c_email_lt: 'dipankar@mindtree.com',
+    f_email: 'Email Address',
+    f_btn: 'Save Changes',
     heading_notification: 'Email Notifications',
     head_pro_text: 'To manage what emails you get, visit the',
     head_other: 'email preferences center.',
+  },
+  security: {
+    heading: 'Security',
+    frm_head: 'Change your password',
+    frm_ch_pass: 'Current Password',
+    new_pass: 'New Password',
+    f_btn: 'Save Changes',
   },
   pref: {
     heading: 'Account preferences',
@@ -65,7 +80,10 @@ export const mprofile = {
     cardDesc:
       'Changes to your language and timezone will be reflected across Jira, Confluence, Trello, Bitbucket and directory. Update your language and timezone for other products from your',
     sett: 'product settings.',
+    sel_drop_lang: 'Select your language',
+    sel_drop_time: 'Your time zone',
     delHead: 'Delete your account',
+    delbtn: 'Delete Account',
     delDesc:
       'When you delete your account, you lose access to Atlassian account services, and we permanently delete your personal data. You can cancel the deletion within 14 days.',
   },

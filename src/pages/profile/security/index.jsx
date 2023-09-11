@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
 import mainProfile from '../main.module.css';
+import { mprofile } from '../../../utils/content';
 import { Input, Button } from '../../../shared';
 
 export const Security = () => {
@@ -35,24 +36,32 @@ export const Security = () => {
   return (
     <div className={mainProfile.appProfileSetup}>
       <div className={mainProfile.appProHeading}>
-        <h1>Security</h1>
+        <h1>{mprofile.security.heading}</h1>
       </div>
       <div className={mainProfile.appProfileCurrentEmail}>
-        <h3>Change your password</h3>
+        <h3>{mprofile.security.frm_head}</h3>
         <div className={mainProfile.appProfileSecForm}>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <Input label={'Current Password'} register={register} required />
-            <Input label={'New Password'} register={register} required />
+            <Input
+              label={mprofile.security.frm_ch_pass}
+              register={register}
+              required
+            />
+            <Input
+              label={mprofile.security.new_pass}
+              register={register}
+              required
+            />
             <span className={mainProfile.spanHeight}></span>
             <div className={mainProfile.buttonProfile}>
-              <Button label={'Save Changes'} typebtn="submit" />
+              <Button label={mprofile.security.f_btn} typebtn="submit" />
             </div>
           </form>
         </div>
       </div>
       <div className={mainProfile.appListProductCard}>
         {contentData.map((item, idx) => (
-          <div className={mainProfile.appCardItemLink}>
+          <div className={mainProfile.appCardItemLink} key={idx}>
             <h4>{item.title}</h4>
             <p>
               {item.desc}&nbsp; <em>{item.learn}</em>

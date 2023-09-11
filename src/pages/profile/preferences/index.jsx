@@ -40,11 +40,14 @@ export const Preferences = () => {
         <div className={mainProfile.appSelectItmRow}>
           <SelectBox
             listdata={languageList}
-            placeholder="Select your language"
+            placeholder={mprofile.pref.sel_drop_lang}
           />
         </div>
         <div className={mainProfile.appSelectItmRow}>
-          <SelectBox listdata={timeList} placeholder="Your time zone" />
+          <SelectBox
+            listdata={timeList}
+            placeholder={mprofile.pref.sel_drop_time}
+          />
         </div>
       </div>
       <div className={mainProfile.appListProductCard}>
@@ -52,7 +55,7 @@ export const Preferences = () => {
           <h4>{mprofile.pref.delHead}</h4>
           <p>{mprofile.pref.delDesc}</p>
           <div className={mainProfile.deleteBtn}>
-            <span>Delete account</span>
+            <span>{mprofile.pref.delbtn}</span>
           </div>
         </div>
       </div>
