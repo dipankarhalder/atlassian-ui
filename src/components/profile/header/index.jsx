@@ -6,6 +6,7 @@ import altlogo from '../../../assets/images/logo.svg';
 import mainProfile from '../main.module.css';
 import { mprofile } from '../../../utils/content';
 import {
+  PROFILEVISIBLE,
   EMAIL,
   SECURITY,
   PREFERENCES,
@@ -15,7 +16,7 @@ import {
 
 export const ProfileHeader = () => {
   const profileNav = [
-    { title: 'Profile and visibility', path: '/' },
+    { title: 'Profile and visibility', path: PROFILEVISIBLE },
     { title: 'Email', path: EMAIL },
     { title: 'Security', path: SECURITY },
     { title: 'Preferences', path: PREFERENCES },

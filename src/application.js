@@ -5,6 +5,7 @@ import {
   Login,
   Register,
   Forgot,
+  ProfileAndVisibility,
   Email,
   Security,
   Preferences,
@@ -15,6 +16,7 @@ import {
   LOGIN,
   REGISTER,
   FORGOT,
+  PROFILEVISIBLE,
   EMAIL,
   SECURITY,
   PREFERENCES,
@@ -34,6 +36,7 @@ export default function Application() {
 
       {/* Manage profile */}
       <Route element={<ProfileLayout />}>
+        <Route path={PROFILEVISIBLE} element={<ProfileAndVisibility />} />
         <Route path={EMAIL} element={<Email />} />
         <Route path={SECURITY} element={<Security />} />
         <Route path={PREFERENCES} element={<Preferences />} />
