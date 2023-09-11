@@ -4,6 +4,7 @@ export const REGISTER = '/register';
 export const FORGOT = '/forgot';
 
 // profile
+export const PROFILEVISIBLE = '/manage-profile/profile-and-visibility';
 export const EMAIL = '/manage-profile/email';
 export const SECURITY = '/manage-profile/security';
 export const PREFERENCES = '/manage-profile/preferences';

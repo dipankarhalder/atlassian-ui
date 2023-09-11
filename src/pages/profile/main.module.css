@@ -162,8 +162,16 @@
         padding: 8px 20px;
         border-radius: 4px;
         font-size: 14px;
+        cursor: pointer;
         font-family: var(--dsemibold);
         background: var(--border);
+        transition: 0.5s;
+
+        &:hover {
+          color: var(--white);
+          transition: 0.5s;
+          background: var(--thbtn);
+        }
       }
 
       & > ul {
