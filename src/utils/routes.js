@@ -3,6 +3,9 @@ export const LOGIN = '/';
 export const REGISTER = '/register';
 export const FORGOT = '/forgot';
 
+// dashboard
+export const DASHBOARD = '/dashboard';
+
 // profile
 export const PROFILEVISIBLE = '/manage-profile/profile-and-visibility';
 export const EMAIL = '/manage-profile/email';
