@@ -9,6 +9,8 @@ export const content = {
     heading: 'Log in to continue',
     place_email: 'Username',
     place_pass: 'Password',
+    place_email_txt: 'username',
+    place_pass_txt: 'password',
     btn_content: 'Continue',
     register_link: 'Create an account',
     forgot_link: `Can't log in?`,

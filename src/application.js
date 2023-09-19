@@ -1,10 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { ProfileLayout } from './layout';
+import { AuthLayout, ProfileLayout, DashboardLayout } from './layout';
 import {
   Login,
   Register,
   Forgot,
+  DashboardStart,
   ProfileAndVisibility,
   Email,
   Security,
@@ -16,6 +17,7 @@ import {
   LOGIN,
   REGISTER,
   FORGOT,
+  DASHBOARD,
   PROFILEVISIBLE,
   EMAIL,
   SECURITY,
@@ -28,10 +30,15 @@ export default function Application() {
   return (
     <Routes>
       {/* Authentication */}
-      <Route path={LOGIN}>
-        <Route index element={<Login />} />
+      <Route element={<AuthLayout />}>
+        <Route path={LOGIN} element={<Login />} />
         <Route path={REGISTER} element={<Register />} />
         <Route path={FORGOT} element={<Forgot />} />
+      </Route>
+
+      {/* Dashboard */}
+      <Route element={<DashboardLayout />}>
+        <Route path={DASHBOARD} element={<DashboardStart />} />
       </Route>
 
       {/* Manage profile */}

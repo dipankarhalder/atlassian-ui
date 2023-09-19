@@ -3,6 +3,9 @@ export * from './auth/login';
 export * from './auth/register';
 export * from './auth/forgot';
 
+// dashboard
+export * from './dashboard/start';
+
 // manage profile
 export * from './profile/profileVisibility';
 export * from './profile/email';
