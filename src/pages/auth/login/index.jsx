@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
@@ -10,25 +11,18 @@ import {
   AuthSocialItem,
   AuthFooter,
 } from '../../../components';
-import { content } from '../../../utils/content';
-import { REGISTER, FORGOT, DASHBOARD } from '../../../utils/routes';
-import { Fragment } from 'react';
+import { token, userAuth, userInfo, content } from '../../../utils/content';
+import { LOGIN, REGISTER, FORGOT, DASHBOARD } from '../../../utils/routes';
+import { useAuthenticator } from '../../../hooks/useAuthenticator';
 
 export function Login() {
-  const token = 'dh346iaasd76423sdfb23876asdhga3764sgd72swh';
-  const userInfo = {
-    fname: 'Dipankar',
-    lname: 'Halder',
-    email: 'dipankar@gmail.com',
-    phone: '9038716514',
-  };
+  useAuthenticator(DASHBOARD, LOGIN);
 
   let navigate = useNavigate();
   const { register, handleSubmit } = useForm();
-
   const onSubmit = (data) => {
     const { username, password } = data;
-    if (username === 'dipankar@gmail.com' && password === 'Dipankar1234#') {
+    if (username === userAuth.email && password === userAuth.password) {
       localStorage.setItem('userToken', token);
       localStorage.setItem('useInfo', JSON.stringify(userInfo));
       navigate(DASHBOARD);

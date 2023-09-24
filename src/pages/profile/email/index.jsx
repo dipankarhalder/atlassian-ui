@@ -86,6 +86,7 @@ export const Email = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <Input
               label={mprofile.email.f_email}
+              valText={mprofile.email.f_email}
               register={register}
               required
             />

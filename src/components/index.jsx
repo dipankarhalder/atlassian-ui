@@ -1,3 +1,6 @@
+// protected route
+export * from './protected';
+
 // authentication
 export * from './auth/logo';
 export * from './auth/head';

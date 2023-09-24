@@ -1,13 +1,9 @@
 import { Outlet } from 'react-router-dom';
-
-import { useAuthenticator } from '../../hooks/useAuthenticator';
-import { LOGIN, DASHBOARD } from '../../utils/routes';
+import mainLayout from '../main.module.css';
 
 export const DashboardLayout = () => {
-  useAuthenticator(DASHBOARD, LOGIN);
-
   return (
-    <div>
+    <div className={mainLayout.appProfileWrapper}>
       <Outlet />
     </div>
   );
