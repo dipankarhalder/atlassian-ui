@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
+import { ProtectedRoute } from './components';
 import { AuthLayout, ProfileLayout, DashboardLayout } from './layout';
 import {
   Login,
@@ -37,12 +38,24 @@ export default function Application() {
       </Route>
 
       {/* Dashboard */}
-      <Route element={<DashboardLayout />}>
+      <Route
+        element={
+          <ProtectedRoute>
+            <DashboardLayout />
+          </ProtectedRoute>
+        }
+      >
         <Route path={DASHBOARD} element={<DashboardStart />} />
       </Route>
 
       {/* Manage profile */}
-      <Route element={<ProfileLayout />}>
+      <Route
+        element={
+          <ProtectedRoute>
+            <ProfileLayout />
+          </ProtectedRoute>
+        }
+      >
         <Route path={PROFILEVISIBLE} element={<ProfileAndVisibility />} />
         <Route path={EMAIL} element={<Email />} />
         <Route path={SECURITY} element={<Security />} />

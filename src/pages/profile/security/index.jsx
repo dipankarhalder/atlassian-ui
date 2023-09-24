@@ -44,11 +44,13 @@ export const Security = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             <Input
               label={mprofile.security.frm_ch_pass}
+              valText={mprofile.security.frm_ch_pass}
               register={register}
               required
             />
             <Input
               label={mprofile.security.new_pass}
+              valText={mprofile.security.new_pass}
               register={register}
               required
             />

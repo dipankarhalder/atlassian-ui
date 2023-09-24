@@ -1,3 +1,17 @@
+export const token = 'dh346iaasd76423sdfb23876asdhga3764sgd72swh';
+
+export const userAuth = {
+  email: 'dipankar@gmail.com',
+  password: 'Dipankar1234#',
+};
+
+export const userInfo = {
+  fname: 'Dipankar',
+  lname: 'Halder',
+  email: 'dipankar@gmail.com',
+  phone: '9038716514',
+};
+
 export const content = {
   common: {
     atlas: 'Atlassian',
@@ -17,8 +31,14 @@ export const content = {
   },
   register: {
     heading: 'Sign up to continue',
+    reg_fname: 'First Name',
+    reg_lname: 'Last Name',
     reg_email: 'Username',
     password: 'Password',
+    reg_fname_txt: 'first_name',
+    reg_lname_txt: 'last_name',
+    place_email_txt: 'username',
+    place_pass_txt: 'password',
     btn_signup: 'Sign up',
     login_link: 'Already have an Atlassian account? Log in',
     reg_foot: 'By signing up, I accept the Atlassian',
@@ -29,6 +49,7 @@ export const content = {
   forgot: {
     heading: `Can't log in?`,
     reg_email: 'Enter your email',
+    place_email_txt: 'username',
     back_login: 'Return to log in',
     recover: 'Send recovery link',
   },
